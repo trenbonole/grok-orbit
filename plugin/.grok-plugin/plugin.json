@@ -1,0 +1,9 @@
+{
+  "name": "grok-orbit",
+  "version": "0.1.0",
+  "description": "Mission control for your Grok Build agents — every session is a pixel-art rocket orbiting a planet in your terminal. Adds /orbit to launch it.",
+  "author": { "name": "trenbonole" },
+  "repository": "https://github.com/trenbonole/grok-orbit",
+  "license": "MIT",
+  "keywords": ["visualization", "tui", "rockets", "fun", "mission-control", "pixel-art"]
+}

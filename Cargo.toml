@@ -1,0 +1,26 @@
+[package]
+name = "grok-orbit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Mission control for your Grok Build agents — every session is a pixel-art rocket orbiting a planet in your terminal."
+license = "MIT"
+repository = "https://github.com/trenbonole/grok-orbit"
+keywords = ["grok-build", "tui", "ratatui", "agents", "visualization"]
+categories = ["command-line-utilities", "visualization"]
+readme = "README.md"
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+dirs = "5"
+unicode-width = "0.2"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = true
+strip = true
