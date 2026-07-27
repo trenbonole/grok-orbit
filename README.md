@@ -81,6 +81,21 @@ worst case: your rockets get boring for a few days.
 
 `GROK_HOME` is respected. Point it somewhere else with `--grok-home <path>`.
 
+## The split-screen setup
+
+The intended cockpit: grok on the left, rockets on the right.
+
+```sh
+# Windows Terminal — split the current window
+wt -w 0 split-pane --size 0.4 grok-orbit
+
+# tmux
+tmux split-window -h -l 45% grok-orbit
+
+# or from inside grok-build, with the plugin installed:
+/orbit        # picks the right split for your terminal
+```
+
 ## Keys & mouse
 
 | key         | action                                     |
